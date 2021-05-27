@@ -270,7 +270,7 @@ def main(argv=None):
                 start = time.time() # reset for recognition
                 if boxes is not None and boxes.shape[0] != 0:
                     res_file_path = os.path.join(FLAGS.output_dir,
-                                                 'res_' + '{}.txt'.format(os.path.basename(im_fn).split('.')[0]))
+                                                 '{}.txt'.format(os.path.basename(im_fn).split('.')[0]))
 
                     input_roi_boxes = boxes[:, :8].reshape(-1, 8)
                     recog_decode_list = []
